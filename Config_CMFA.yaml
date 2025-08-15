@@ -36,7 +36,7 @@ proxies:
   type: trojan
   server: biznet.vpnstore28.my.id
   port: 443
-  password: b7815433-4119-4bbd-9525-8c1f824d1326
+  password: dc7c7cfb-f7e2-460a-b235-8cc30a06ae32
   udp: true
   sni: live.iflix.com
   skip-cert-verify: true
