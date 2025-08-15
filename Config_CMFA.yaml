@@ -34,44 +34,18 @@ dns:
 proxies:
 - name: AKUNID
   type: trojan
-  server: 104.22.5.240
+  server: biznet.vpnstore28.my.id
   port: 443
-  password: W79hqVWaHHS3ZB8Jrxbclg
+  password: b7815433-4119-4bbd-9525-8c1f824d1326
   udp: true
-  sni: ums2.xmd.asia
+  sni: live.iflix.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: ums2.xmd.asia
-- name: IDNUSA
-  type: trojan
-  server: 104.22.5.240
-  port: 443
-  password: Bhpr3uD33lyqvnNTKWjOxA
-  udp: true
-  sni: man4.xmd.asia
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-  headers:
-      Host: man4.xmd.asia
-- name: SGLEAS
-  type: trojan
-  server: investor.fb.com
-  port: 443
-  password: KQ3GjQcwaORsYgO5znE4JQ
-  udp: true
-  sni: lwb1.xmd.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-  headers:
-      Host: lwb1.xmd.my.id
-
+      Host: biznet.vpnstore28.my.id
+      
 proxy-groups:
   - name: ID-X
     type: select
@@ -79,8 +53,6 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUNID
-      - IDNUSA
-      - SGLEAS
 
   - name: MIX-X
     type: fallback
@@ -88,8 +60,6 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUNID
-      - IDNUSA
-      - SGLEAS
       
   - name: IKLAN
     type: select
